@@ -1,0 +1,11 @@
+{
+  "name": "remove-add-vkmusic-2",
+  "description": "Обновление страницы вконтакте, когда появляется реклама и запуск музыки с момента окончания прослушивания",
+  "version": "1.1",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "matches": ["https://vk.com/*"],
+    "js": ["script.js"],
+    "run_at": "document_end"
+  }]
+}
